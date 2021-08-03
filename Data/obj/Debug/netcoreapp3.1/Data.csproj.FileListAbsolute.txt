@@ -1,0 +1,12 @@
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Data\obj\Debug\netcoreapp3.1\Data.pdb

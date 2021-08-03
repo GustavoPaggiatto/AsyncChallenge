@@ -1,0 +1,12 @@
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\obj\Debug\netcoreapp3.1\Visitor.csproj.AssemblyReference.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\obj\Debug\netcoreapp3.1\Visitor.AssemblyInfoInputs.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\obj\Debug\netcoreapp3.1\Visitor.AssemblyInfo.cs
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\obj\Debug\netcoreapp3.1\Visitor.csproj.CoreCompileInputs.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\bin\Debug\netcoreapp3.1\Visitor.deps.json
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\bin\Debug\netcoreapp3.1\Visitor.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\bin\Debug\netcoreapp3.1\Visitor.pdb
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\obj\Debug\netcoreapp3.1\Visitor.csproj.CopyComplete
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\obj\Debug\netcoreapp3.1\Visitor.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Visitor\obj\Debug\netcoreapp3.1\Visitor.pdb

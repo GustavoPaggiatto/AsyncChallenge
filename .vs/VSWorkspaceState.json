@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Data",
+    "\\Domain",
+    "\\Domain\\Interfaces",
+    "\\Service"
+  ],
+  "SelectedNode": "\\Service\\BaseService.cs",
+  "PreviewInSolutionExplorer": false
+}
