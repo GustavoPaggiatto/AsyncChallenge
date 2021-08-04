@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Domain.Entities
 {
     public sealed class Course : BaseEntity
@@ -5,5 +7,6 @@ namespace Domain.Entities
         public string Name { get; set; }
         public string Lecturer { get; set; }
         public int MaxNumberOfStudents { get; set; }
+        public IEnumerable<Student> Students { get; set; }
     }
 }

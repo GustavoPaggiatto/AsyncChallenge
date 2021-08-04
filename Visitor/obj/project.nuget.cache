@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TKWSR0TXw1m0sW+/yNQDfcw3sdkCxRXkEymBDLYN5SqVCcfDJ3062HqfMG/vZv7WPjbFObwhlZttDSgNnunc8g==",
+  "dgSpecHash": "IYD2I38vqhBD++iX2o1sH6PP+8GUIQfpQr1m/hWEHKaEwifZFhpGVNBb8LTTblw7i72BBaYd0fqD4/yr9B2PtQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\miragustavo\\Documents\\Study\\AsyncChallenge\\Visitor\\Visitor.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\miragustavo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\miragustavo\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
     "C:\\Users\\miragustavo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\miragustavo\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"

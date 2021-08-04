@@ -1,0 +1,15 @@
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\Adapter.csproj.AssemblyReference.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\Adapter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\Adapter.AssemblyInfoInputs.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\Adapter.AssemblyInfo.cs
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\Adapter.csproj.CoreCompileInputs.cache
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\bin\Debug\net5.0\Adapter.deps.json
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\bin\Debug\net5.0\Adapter.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\bin\Debug\net5.0\ref\Adapter.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\bin\Debug\net5.0\Adapter.pdb
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\bin\Debug\net5.0\Domain.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\bin\Debug\net5.0\Domain.pdb
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\Adapter.csproj.CopyComplete
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\Adapter.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\ref\Adapter.dll
+C:\Users\miragustavo\Documents\Study\AsyncChallenge\Adapter\obj\Debug\net5.0\Adapter.pdb

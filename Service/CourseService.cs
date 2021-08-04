@@ -74,5 +74,10 @@ namespace Service
         {
             return (this._repository as ICourseRepository).GetById(id);
         }
+
+        public Result<IEnumerable<Course>> GetAll()
+        {
+            return (this._repository as ICourseRepository).GetAll();
+        }
     }
 }

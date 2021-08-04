@@ -11,6 +11,7 @@ namespace Data
     public sealed class CourseRepository : BaseRepository<Course>, ICourseRepository
     {
         private static List<Course> _courses;
+        private static object _lock;
 
         public CourseRepository(ILog logger) : base(logger)
         {
@@ -19,6 +20,7 @@ namespace Data
         static CourseRepository()
         {
             _courses = new List<Course>();
+            _lock = new object();
         }
 
         public override Result Insert(IEnumerable<Course> instances)
@@ -27,7 +29,10 @@ namespace Data
 
             try
             {
-                _courses.AddRange(instances);
+                lock (_lock)
+                {
+                    _courses.AddRange(instances);
+                }
             }
             catch (Exception ex)
             {
@@ -68,6 +73,47 @@ namespace Data
             {
                 this._logger.Error(ex);
                 result.AddError("An error occurred while retrieving course data, try again or contact the responsible team.");
+            }
+
+            return result;
+        }
+
+        public Result<int> GetLogins(int courseId)
+        {
+            var result = new Result<int>();
+
+            try
+            {
+                var course = _courses.FirstOrDefault(c => c.Id == courseId);
+
+                if (course != null)
+                    result.Content = course.Students.Count();
+            }
+            catch (Exception ex)
+            {
+                this._logger.Error(ex);
+                result.AddError("An error occurred while retrieving course logins quantity, " +
+                "try again or contact the responsible team.");
+            }
+
+            return result;
+        }
+
+        public Result<IEnumerable<Course>> GetAll()
+        {
+            var result = new Result<IEnumerable<Course>>();
+
+            try
+            {
+                lock (_lock)
+                {
+                    result.Content = _courses;
+                }
+            }
+            catch (Exception ex)
+            {
+                this._logger.Error(ex);
+                result.AddError("An error occurred while get courses, please re-try.");
             }
 
             return result;
