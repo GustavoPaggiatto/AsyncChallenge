@@ -21,13 +21,17 @@ namespace Adapter
             result.Content = new CourseGeneralReport();
             result.Content.Lecturer = course.Lecturer;
             result.Content.CourseName = course.Name;
-            result.Content.Average = (int)(course.Students.Sum(s => DateTime.Now.Subtract(s.BirthDate).Days / 365) / course.Students.Count());
 
-            var minDate = course.Students.Min(s => s.BirthDate);
-            var maxDate = course.Students.Max(s => s.BirthDate);
+            if (course.Students != null && course.Students.Count() > 0)
+            {
+                result.Content.Average = (int)(course.Students.Sum(s => DateTime.Now.Subtract(s.BirthDate).Days / 365) / course.Students.Count());
 
-            result.Content.MaxAge = DateTime.Now.Subtract(minDate).Days / 365;
-            result.Content.MinAge = DateTime.Now.Subtract(maxDate).Days / 365;
+                var minDate = course.Students.Min(s => s.BirthDate);
+                var maxDate = course.Students.Max(s => s.BirthDate);
+
+                result.Content.MaxAge = DateTime.Now.Subtract(minDate).Days / 365;
+                result.Content.MinAge = DateTime.Now.Subtract(maxDate).Days / 365;
+            }
 
             return result;
         }

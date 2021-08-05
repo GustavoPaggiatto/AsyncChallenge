@@ -9,5 +9,7 @@ namespace Domain.Interfaces.Repositories
          Result<Course> GetById(int id);
          Result<int> GetLogins(int courseId);
          Result<IEnumerable<Course>> GetAll();
+         Result<int> GetMaxId();
+         Result AddStudent(Course course);
     }
 }

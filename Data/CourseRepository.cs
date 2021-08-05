@@ -5,6 +5,7 @@ using Domain.Interfaces.Repositories;
 using log4net;
 using System;
 using System.Linq;
+using System.Collections;
 
 namespace Data
 {
@@ -67,7 +68,13 @@ namespace Data
 
             try
             {
-                result.Content = _courses.FirstOrDefault(c => c.Id == id);
+                lock (_lock)
+                {
+                    var content = _courses.FirstOrDefault(c => c.Id == id);
+
+                    if (content != null)
+                        result.Content = content.Clone() as Course;
+                }
             }
             catch (Exception ex)
             {
@@ -84,10 +91,13 @@ namespace Data
 
             try
             {
-                var course = _courses.FirstOrDefault(c => c.Id == courseId);
+                lock (_lock)
+                {
+                    var course = _courses.FirstOrDefault(c => c.Id == courseId);
 
-                if (course != null)
-                    result.Content = course.Students.Count();
+                    if (course != null)
+                        result.Content = course.Students.Count();
+                }
             }
             catch (Exception ex)
             {
@@ -102,18 +112,70 @@ namespace Data
         public Result<IEnumerable<Course>> GetAll()
         {
             var result = new Result<IEnumerable<Course>>();
+            var content = new List<Course>();
 
             try
             {
                 lock (_lock)
                 {
-                    result.Content = _courses;
+                    foreach (var course in _courses)
+                    {
+                        content.Add(course.Clone() as Course);
+                    }
+
+                    result.Content = content;
                 }
             }
             catch (Exception ex)
             {
                 this._logger.Error(ex);
                 result.AddError("An error occurred while get courses, please re-try.");
+            }
+
+            return result;
+        }
+
+        public Result<int> GetMaxId()
+        {
+            var result = new Result<int>();
+
+            try
+            {
+                lock (_lock)
+                {
+                    if (_courses.Count() > 0)
+                        result.Content = _courses.Max(c => c.Id);
+                }
+            }
+            catch (Exception ex)
+            {
+                this._logger.Error(ex);
+                result.AddError("An error occurred while get last course, please re-try.");
+            }
+
+            return result;
+        }
+
+        public Result AddStudent(Course course)
+        {
+            var result = new Result();
+
+            try
+            {
+                lock (_lock)
+                {
+                    var key = _courses.First(c => c.Id == course.Id);
+
+                    if (key.Students == null)
+                        key.Students = new List<Student>();
+
+                    (key.Students as IList).Add(course.Students.First());
+                }
+            }
+            catch (Exception ex)
+            {
+                this._logger.Error(ex);
+                result.AddError("An error occurred while add student to course, please re-try.");
             }
 
             return result;

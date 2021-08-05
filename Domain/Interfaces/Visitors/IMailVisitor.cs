@@ -1,9 +1,7 @@
-using System.Net.Mail;
-
 namespace Domain.Interfaces.Visitors
 {
-    public interface IMailVisitor : IVisitor<MailMessage>
+    public interface IMailVisitor<T> : IVisitor<T>
     {
-        void SetSptmConfiguration(string host, string user, string password, bool useSssl = false);
+        void SetSptmConfiguration(string host, int port, bool useSssl = false);
     }
 }
