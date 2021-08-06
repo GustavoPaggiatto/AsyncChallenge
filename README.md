@@ -5,7 +5,7 @@ Architectural Overview:
   3. Soc: With especific Domain (interfaces, POCO entities, results etc.) project we can separate contracts from implementations.
   4. IoC: We have a specific layer to configure the DI.
   5. MicroServices: API layer.
- Technologies:
+Technologies:
   1. .Net Core 3.1.
   2. Unity Container (IoC).
   3. Storage Type: In memory (I used this because persisting the data in a database would take the focus off the application). Data is stored in static lists in the repository layer with lock access (concurrency).
@@ -13,8 +13,8 @@ Architectural Overview:
   5. Log4Net: Write logs.
   6. Swagger: For tests.
 Things to improve:
-  1. Implement circuit break when sending email to user.
-  2. Do unity tests and do mocks (repositories, adapters etc).
+  8. Implement circuit break when sending email to user.
+  9. Do unity tests and do mocks (repositories, adapters etc).
 OBSs:
   1. signPp requests are process in the async principle (Task).
   2. We have a background worker ("StudentSignUpWorker") in the API layer to read queue (better than create windows service to do this at the moment).
