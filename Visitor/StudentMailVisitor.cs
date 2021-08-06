@@ -18,7 +18,9 @@ namespace Visitor
             this._smtp = new SmtpClient(host, port)
             {
                 Credentials = new NetworkCredential("devpaggiatto@gmail.com", "DEV2021paggiatto"),
-                EnableSsl = useSssl
+                EnableSsl = useSssl,
+                UseDefaultCredentials = false,
+                DeliveryMethod = SmtpDeliveryMethod.Network
             };
         }
 

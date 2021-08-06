@@ -58,9 +58,9 @@ namespace Service
             return result;
         }
 
-        public async Task<Result> SignUp(Student student)
+        public Task<Result> SignUp(Student student)
         {
-            return await Task.Run<Result>(() =>
+            return Task.Run<Result>(() =>
            {
                var result = new Result();
 
@@ -207,6 +207,7 @@ namespace Service
 
                 // Send email...
                 this._mailVisitor.SetSptmConfiguration("smtp.gmail.com", 587, true);
+                this._mailVisitor.Visit(instance);
             }
             catch (Exception ex)
             {
