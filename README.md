@@ -15,8 +15,8 @@ Technologies:
   6. Swagger: For tests.
   
 Things to improve:
-  8. Implement circuit break when sending email to user.
-  9. Do unity tests and do mocks (repositories, adapters etc).
+  1. Implement circuit break when sending email to user.
+  2. Do unity tests and do mocks (repositories, adapters etc).
   
 OBSs:
   1. signPp requests are process in the async principle (Task).
